@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+input,
+button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #a6a6a6;
+}
+input::placeholder {
+  font-size: 13px;
+}
+button {
+  background: #454545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #454545;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eaeaea;
+  padding-top: 30px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  background: #e9ecef;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.column h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.task {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: grab;
+  position: relative;
+}
+
+.task.completed {
+  background: #d4edda;
+}
+
+.task.past-due {
+  background: #ffffff;
+}
+.column-wrapper {
+  width: 100%;
+}
+h2 {
+  width: max-content;
+  font-size: 13px;
+  padding: 4px 10px;
+
+  border-radius: 10px;
+}
+
+.column-wrapper:nth-child(1) h2 {
+  background-color: #ffe2dd;
+  color: #712f2d;
+}
+
+.column-wrapper:nth-child(2) h2 {
+  background: #d3e5ef;
+  color: #1b3749;
+}
+
+.column-wrapper:nth-child(3) h2 {
+  background: #dbeddb;
+  color: #233e2f;
+}
+
+.column-wrapper:nth-child(1) .column {
+  background-color: #fdf8f6;
+  color: #000000;
+}
+
+.column-wrapper:nth-child(2) .column {
+  background-color: #f5fafc;
+}
+
+.column-wrapper:nth-child(3) .column {
+  background-color: #f7faf7;
+}
+p.task-name {
+  font-weight: 600;
+}
+p.task-date {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #7f7f7f;
+  font-size: 13px;
+}
+p.task-person {
+  color: #515151;
+  font-size: 14px;
+}

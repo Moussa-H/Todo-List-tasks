@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+      <form id="task-form">
+        <input type="text" id="task-name" placeholder="Task Name" required />
+        <input type="datetime-local" id="task-datetime" required />
+        <input type="text" id="task-person" placeholder="Assign to" required />
+        <button type="submit">Add Task</button>
+      </form>
+      <div class="columns">
+        <div class="column-wrapper">
+          <h2 class="title-column">Past Due</h2>
+          <div id="past-due-column" class="column"></div>
+        </div>
+        <div class="column-wrapper">
+          <h2 class="title-column">Pending</h2>
+          <div id="pending-column" class="column"></div>
+        </div>
+        <div class="column-wrapper">
+          <h2 class="title-column">Completed</h2>
+          <div id="completed-column" class="column"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
